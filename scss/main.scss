@@ -1,0 +1,43 @@
+$lineWidth: 10vh;
+$red: #db3236;
+$yellow: #f4c20d;
+$green: #3cba54;
+$blue: #4885ed;
+
+#google-logo {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  margin: 1vh 10vw;
+  border: $lineWidth solid $red;
+  border-bottom-color: $green;
+  border-left-color: $yellow;
+  border-right-color: transparent;
+  border-radius: 50%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: $lineWidth solid transparent;
+    border-right-color: $blue;
+    border-radius: 50%;
+    top: -$lineWidth;
+    left: -$lineWidth;
+    transform: rotate(38deg);
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 14vw;
+    height: $lineWidth;
+    background-color: $blue;
+    top: 40%;
+    left: 10.7vw;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 20%;
+  }
+}
