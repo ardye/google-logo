@@ -8,7 +8,7 @@
   border-left-color: #f4c20d;
   border-right-color: transparent;
   border-radius: 50%; }
-  #google-logo:before {
+  #google-logo::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -20,7 +20,7 @@
     left: -10vh;
     transform: rotate(38deg);
     z-index: -1; }
-  #google-logo:after {
+  #google-logo::after {
     content: '';
     position: absolute;
     width: 14vw;

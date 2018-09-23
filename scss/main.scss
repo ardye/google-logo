@@ -15,7 +15,7 @@ $blue: #4885ed;
   border-right-color: transparent;
   border-radius: 50%;
 
-  &:before {
+  &::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -29,7 +29,7 @@ $blue: #4885ed;
     z-index: -1;
   }
 
-  &:after {
+  &::after {
     content: '';
     position: absolute;
     width: 14vw;
